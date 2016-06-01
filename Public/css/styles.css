@@ -1,0 +1,10 @@
+@charset "utf-8";
+
+.slider{display:none;}/*用于获取更加体验*/
+.slider ul{
+	padding: 0px;
+	margin: 0px;
+}
+
+.focus span{width:10px;height:10px;margin-right:10px;border-radius:50%;background:#666;font-size:0}
+.focus span.current{background:#fff}
