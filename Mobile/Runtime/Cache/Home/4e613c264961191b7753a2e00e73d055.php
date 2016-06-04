@@ -103,7 +103,7 @@
 						<a href="/index.php/Restaurant/index">餐饮</a>
 					</li>
 					<li>
-						<a href="#anylink">商店</a>
+						<a href="/index.php/Shop/index">商店</a>
 					</li>
 					<li>
 						<a href="#anylink">论坛</a>
