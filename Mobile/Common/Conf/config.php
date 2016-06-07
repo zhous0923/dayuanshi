@@ -9,7 +9,7 @@ return array (
 				'__APP__' => __ROOT__.'/index.php',
 				'__JS__' => __ROOT__ . '/Public/js',
 				'__CSS__' => __ROOT__ . '/Public/css',
-				'__IMG__' => __ROOT__ . '/Public/imgs',
+				'__IMG__' => __ROOT__ . '/Public/img',
 				'__FONT__' => __ROOT__ . '/Public/fonts' 
 		) 
 );

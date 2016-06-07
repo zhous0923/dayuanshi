@@ -6,6 +6,6 @@ use Think\Controller;
 
 class ShopController extends Controller{
 	public function index(){
-		$this->display("/Shop/index");
+		$this->display("/Shop/a");
 	}
 }

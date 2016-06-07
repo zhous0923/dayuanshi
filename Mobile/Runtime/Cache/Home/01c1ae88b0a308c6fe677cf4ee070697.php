@@ -20,6 +20,7 @@
 <!-- 引入 jQuery Mobile 样式 -->
 <link rel="stylesheet" type="text/css"
 	href="/Public/js/jm/jquery.mobile-1.4.5.min.css">
+	
 
 
 
@@ -27,7 +28,7 @@
 <body>
 
 	<div data-role="page" id="pageone">
-
+<script type="text/javascript" src="/Public/js/LoadSlide.js"></script>
 		
 		<div data-role="panel" id="myPanel">
 			asdsdsa
@@ -64,7 +65,7 @@
 	<li><a href="/index.php/News/index"
 		class="ui-btn-active ui-state-persist">资讯</a></li>
 	<li><a href="/index.php/Campaign/index">活动</a></li>
-	<li><a href="#anylink">餐饮</a></li>
+	<li><a href="/index.php/Restaurant/index">餐饮</a></li>
 	<li><a href="#anylink">商店</a></li>
 	<li><a href="#anylink">论坛</a>
 </ul>

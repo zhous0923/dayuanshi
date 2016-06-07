@@ -20,6 +20,7 @@
 <!-- 引入 jQuery Mobile 样式 -->
 <link rel="stylesheet" type="text/css"
 	href="/Public/js/jm/jquery.mobile-1.4.5.min.css">
+	
 
 
 
@@ -27,7 +28,7 @@
 <body>
 
 	<div data-role="page" id="pageone">
-
+	<script type="text/javascript" src="/Public/js/LoadSlide.js"></script>
 		
 		<div data-role="panel" id="myPanel">
 			asdsdsa
@@ -45,8 +46,8 @@
 							class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">图标</a>
 					</td>
 					<td width="60%" align="center">
-						<a href="/index.php/Index/index">
-							<img src="/Public/imgs/logo.png" alt="大元氏" title="大元氏" width="234"
+						<a href="/index.php/Index/index" rel="external">
+							<img src="/Public/img/logo.png" alt="大元氏" title="大元氏" width="234"
 								hight="60" />
 						</a>
 					</td>
@@ -69,7 +70,7 @@
 			class="ui-btn-active ui-state-persist">活动</a>
 	</li>
 	<li>
-		<a href="#anylink">餐饮</a>
+		<a href="/index.php/Restaurant/index">餐饮</a>
 	</li>
 	<li>
 		<a href="#anylink">商店</a>
@@ -81,7 +82,7 @@
 			</div>
 		</div>
 
-		<div data-role="main" class="ui-content">
+		<div data-role="main" class="ui-content" style="margin-top: 0px;padding: 3px;">
 			
 
 <ul data-role="listview" data-inset="false" style="margin-top: 0px;">
@@ -119,25 +120,7 @@
 			<h1>版权</h1>
 
 			
-			 <script src="/Public/js/cssslidy.js"></script>
-<script>
-	cssSlidy({
-		timeOnSlide : 5,
-		timeBetweenSlides : .5,
-		slidyContainerSelector : '#slidy-container',
-		slidySelector : '#slidy',
-		captionSource : 'data-caption',
-		captionBackground : 'rgba(0,0,0,0.5)',
-		captionColor : '#ff0',
-		captionFont : 'Raleway, Brittanic Bold, Hevetica, sans-serif',
-		captionPosition : 'bottom',
-		captionAppear : 'perm',
-		captionSize : '14px',
-		captionPadding : '1em',
-		/*fallbackFunction: function(){ alert("Oh noes! You can't animate!"); },*/
-		cssAnimationName : 'slidy'
-	});
-</script> 
+			 
 		</div>
 	</div>
 	</div>

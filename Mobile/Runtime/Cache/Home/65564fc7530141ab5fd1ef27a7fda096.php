@@ -1,102 +1,151 @@
-<?php if (!defined('THINK_PATH')) exit();?><html>
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE HTML>
+<html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<title>标题</title>
+<title>
+	资讯-大元氏
+</title>
 
 <!-- meta使用viewport以确保页面可自由缩放 -->
 <meta name="viewport"
 	content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
 
+<!-- 引入 jQuery 库 -->
+<script type="text/javascript" src="/Public/js/jm/jquery-1.11.3.min.js"></script>
+
+<!-- 引入 jQuery Mobile 库 -->
+<script type="text/javascript"
+	src="/Public/js/jm/jquery.mobile-1.4.5.min.js"></script>
+
+<!-- 引入 jQuery Mobile 样式 -->
+<link rel="stylesheet" type="text/css"
+	href="/Public/js/jm/jquery.mobile-1.4.5.min.css">
+	
 
 
 
-<style type="text/css">
-.banner {
-	position: relative;
-	width: 100%;
-	overflow: auto;
-
-	font-size: 18px;
-	line-height: 24px;
-	text-align: center;
-
-	color: rgba(255,255,255,.6);
-	text-shadow: 0 0 1px rgba(0,0,0,.05), 0 1px 2px rgba(0,0,0,.3);
-
-	background: #5b4d3d;
-	box-shadow: 0 1px 2px rgba(0,0,0,.25);
-}
-	.banner ul {
-		list-style: none;
-		width: 300%;
-	}
-	.banner ul li {
-		display: block;
-		float: left;
-		width: 33%;
-		min-height: 350px;
-
-		-o-background-size: 100% 100%;
-		-ms-background-size: 100% 100%;
-		-moz-background-size: 100% 100%;
-		-webkit-background-size: 100% 100%;
-		background-size: 100% 100%;
-
-		box-shadow: inset 0 -3px 6px rgba(0,0,0,.1);
-	}
-</style>
 </head>
 <body>
 
+	<div data-role="page" id="pageone">
+<script type="text/javascript" src="/Public/js/LoadSlide.js"></script>
+		
+		<div data-role="panel" id="myPanel">
+			asdsdsa
+			<a href="#pageone" data-rel="close"
+				class="ui-btn ui-btn-inline ui-shadow ui-corner-all ui-btn-b ui-icon-delete ui-btn-icon-left">Close</a>
+		</div>
+		
 
+		<div data-role="header" style="background-color: #fff;">
+			
+			<table border="0" width="100%">
+				<tr>
+					<td width="20%" align="center">
+						<a href="#myPanel"
+							class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">图标</a>
+					</td>
+					<td width="60%" align="center">
+						<a href="/index.php/Index/index">
+							<img src="/Public/imgs/logo.png" alt="大元氏" title="大元氏" width="234"
+								hight="60" />
+						</a>
+					</td>
+					<td width="20%" align="center">
+						<!-- <a href="#"
+										class="ui-btn ui-corner-all ui-icon-search ui-btn-icon-notext">图标</a> -->
+					</td>
+				</tr>
+			</table>
+			
 
-	<div class="banner">
-		<ul>
+			<div data-role="navbar">
+				
+<ul>
+	<li><a href="/index.php/News/index"
+		class="ui-btn-active ui-state-persist">资讯</a></li>
+	<li><a href="/index.php/Campaign/index">活动</a></li>
+	<li><a href="/index.php/Restaurant/index">餐饮</a></li>
+	<li><a href="#anylink">商店</a></li>
+	<li><a href="#anylink">论坛</a>
+</ul>
 
-			<li style="background-image: url('/Public/imgs/1.jpg');width: 100px;height: 100px;">sss</li>
+			</div>
+		</div>
 
-			<li style="background-image: url('/Public/imgs/1.jpg');width: 100px;height: 100px;">sss</li>
+		<div data-role="main" class="ui-content" style="margin-top: 0px;padding: 3px;">
+			
 
-			<li style="background-image: url('/Public/imgs/1.jpg');width: 100px;height: 100px;">ssss</li>
-		</ul>
-	</div>
-	<script src="/Public/js/jquery-1.11.3.min.js" type="text/javascript"></script>
-	<script src="/Public/js/unslider.min.js" type="text/javascript"></script>
+<div class="ui-slider">
+	<ul class="ui-slider-content" style="width: 300%">
+		<li><span
+			style="background-image: url(http://placeholder.qiniudn.com/640x200)">asdsa</span></li>
+		<li><span
+			style="background-image: url(http://placeholder.qiniudn.com/640x200)">asdsa</span></li>
+		<li><span
+			style="background-image: url(http://placeholder.qiniudn.com/640x200)">asdsa</span></li>
+	</ul>
+</div>
+<script class="demo-script">
+	(function() {
+		var slider = new fz.Scroll('.ui-slider', {
+			role : 'slider',
+			indicator : true,
+			autoplay : true,
+			interval : 3000
+		});
+
+		slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+			console.log(fromIndex, toIndex)
+		});
+
+		slider.on('scrollEnd', function(cruPage) {
+			console.log(cruPage)
+		});
+	})();
+</script>
+
+<ul data-role="listview" data-inset="true">
+	<li data-role="divider"><b>最新资讯</b></li>
+	<li><a href="#"> <img src="chrome.png">
+			<h2>Google Chrome</h2>
+			<p>Google Chrome 是免费的开源 web 浏览器。发布于 2008 年。</p>
+	</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li><a href="#">列表项</a></li>
+	<li data-icon="delete"><a href="#">data-icon="delete"</a></li>
+	<li>
+		<div align="center">
+			<a href="/index.php/News/lists">全部</a>
+		</div>
+	</li>
+</ul>
 <script type="text/javascript">
-			if(window.chrome) {
-				$('.banner li').css('background-size', '100% 100%');
-			}
+	$('.ui-list li,.ui-tiled li').click(function() {
+		if ($(this).data('href')) {
+			location.href = $(this).data('href');
+		}
+	});
+	$('.ui-header .ui-btn').click(function() {
+		location.href = 'index.html';
+	});
+</script> 
+		</div>
 
-			$('.banner').unslider({
-				arrows: true,
-				fluid: true,
-				dots: true
-			});
+		<div data-role="footer" style="background-color: #fff;">
+			
 
-			//  Find any element starting with a # in the URL
-			//  And listen to any click events it fires
-			$('a[href^="#"]').click(function() {
-				//  Find the target element
-				var target = $($(this).attr('href'));
-
-				//  And get its position
-				var pos = target.offset(); // fallback to scrolling to top || {left: 0, top: 0};
-
-				//  jQuery will return false if there's no element
-				//  and your code will throw errors if it tries to do .offset().left;
-				if(pos) {
-					//  Scroll the page
-					$('html, body').animate({
-						scrollTop: pos.top,
-						scrollLeft: pos.left
-					}, 1000);
-				}
-
-				//  Don't let them visit the url, we'll scroll you there
-				return false;
-			});
+			<h1>版权</h1>
 
 			
-		</script>
+			 
+		</div>
+	</div>
+	</div>
 </body>
 </html>

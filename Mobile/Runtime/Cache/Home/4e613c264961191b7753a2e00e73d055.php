@@ -59,7 +59,7 @@
 <body>
 
 	<div data-role="page" id="pageone">
-<script type="text/javascript" src="/Public/js/LoadSlide.js"></script>
+	<script type="text/javascript" src="/Public/js/LoadSlide.js"></script>
 		
 		<div data-role="panel" id="myPanel">
 			asdsdsa
@@ -77,8 +77,8 @@
 							class="ui-btn ui-corner-all ui-icon-bars ui-btn-icon-notext">图标</a>
 					</td>
 					<td width="60%" align="center">
-						<a href="/index.php/Index/index">
-							<img src="/Public/imgs/logo.png" alt="大元氏" title="大元氏" width="234"
+						<a href="/index.php/Index/index" rel="external">
+							<img src="/Public/img/logo.png" alt="大元氏" title="大元氏" width="234"
 								hight="60" />
 						</a>
 					</td>
@@ -94,16 +94,16 @@
 				
 				<ul>
 					<li>
-						<a href="/index.php/News/index">资讯</a>
+						<a href="/index.php/News/index" rel="external">资讯</a>
 					</li>
 					<li>
-						<a href="/index.php/Campaign/index">活动</a>
+						<a href="/index.php/Campaign/index" rel="external">活动</a>
 					</li>
 					<li>
-						<a href="/index.php/Restaurant/index">餐饮</a>
+						<a href="/index.php/Restaurant/index" rel="external">餐饮</a>
 					</li>
 					<li>
-						<a href="/index.php/Shop/index">商店</a>
+						<a href="/index.php/Shop/index" rel="external">商店</a>
 					</li>
 					<li>
 						<a href="#anylink">论坛</a>
@@ -117,10 +117,10 @@
 <div class="WSCSlideWrapperIndex" id="WSCSlideWrapperIndex" style="width: 100%;">
 	<div>
 		<a><img
-			src="/Public/imgs/1.jpg" /></a> <a><img
-			src="/Public/imgs/2.jpg" /></a> <a><img
-			src="/Public/imgs/3.jpg" /></a> <a><img
-			src="/Public/imgs/4.jpg" /></a>
+			src="/Public/img/1.jpg" /></a> <a><img
+			src="/Public/img/2.jpg" /></a> <a><img
+			src="/Public/img/3.jpg" /></a> <a><img
+			src="/Public/img/4.jpg" /></a>
 	</div>
 </div>
 <script type="text/javascript">
